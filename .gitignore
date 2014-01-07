@@ -1,0 +1,5 @@
+.DS_Store
+bundle/
+!bundle/.nodelete
+tmp/*.swp
+after/

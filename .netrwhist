@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/sohjiro/.vim'
+let g:netrw_dirhist_2='/home/sohjiro/Descargas/idea-IU-129.713/help'
+let g:netrw_dirhist_3='/Users/makingdevs/workspace/siyen'
+let g:netrw_dirhist_4='/Users/makingdevs/workspace'
+let g:netrw_dirhist_5='/Users/makingdevs/workspace/siyen'
+let g:netrw_dirhist_6='/Users/makingdevs/workspace/siyen/grails-app'
+let g:netrw_dirhist_7='/Users/makingdevs/workspace/siyen/grails-app/utils'
