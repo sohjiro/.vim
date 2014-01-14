@@ -68,6 +68,6 @@ let g:airline_powerline_fonts=1
 NeoBundleCheck
 
 augroup config_files
-  source /Users/makingdevs/.vim/vim_config.vim
+  source ~/.vim/vim_config.vim
 augroup END
 
