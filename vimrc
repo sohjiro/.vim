@@ -20,7 +20,7 @@ NeoBundle 'Lokaltog/vim-easymotion', '09c0cea8'   " This plugin is locked at rev
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " vim-scripts repos
-" NeoBundle 'L9'
+NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'rails.vim'
 
