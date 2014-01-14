@@ -1,10 +1,8 @@
-#!/bin/sh
-
-# echo "\033[0;34mCloning .vim from fjuarezmurillo repository...\033[0m"
-# hash git >/dev/null && /usr/bin/env git clone https://github.com/fjuarezmurillo/.vim.git ~/.vim || {
-#   echo "git not installed"
-#   exit
-# }
+echo "\033[0;34mCloning .vim from fjuarezmurillo repository...\033[0m"
+hash git >/dev/null && /usr/bin/env git clone https://github.com/fjuarezmurillo/.vim.git ~/.vim || {
+  echo "git not installed"
+  exit
+}
 
 echo "\033[0;34mCreating bundle directory...\033[0m"
 mkdir -p ~/.vim/bundle
