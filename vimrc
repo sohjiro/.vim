@@ -23,6 +23,7 @@ NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'rails.vim'
+NeoBundle 'kchmck/vim-coffee-script'
 
 " Non github repos
 NeoBundle 'kien/ctrlp.vim.git'
