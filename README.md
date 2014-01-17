@@ -1,7 +1,17 @@
 .vim
 ====
 
-Configuracion/Plugin de vim
+This repo uses NeoBundle in order to install plugins.
+If you want to know more aboyt NeoBundle check this :
+```
+https://github.com/Shougo/neobundle.vim
+```
+
+And if you want to install more plugins this is what you want
+
+```
+http://www.vimpusher.com/plugins
+```
 
 
 Setup
