@@ -51,7 +51,7 @@ set expandtab                    " Use spaces instead of tabs
 set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-set wildignore+=target/**,tmp/**,*.swp,*.class
+set wildignore+=target/*,tmp/*,*.swp,*.class
 
 " Or use vividchalk
 " colorscheme solarized
