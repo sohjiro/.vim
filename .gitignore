@@ -3,3 +3,4 @@ bundle/
 !bundle/.nodelete
 tmp/*.swp
 after/
+.netrwhist
