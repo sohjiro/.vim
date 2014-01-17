@@ -2,7 +2,9 @@
 ====
 
 This repo uses NeoBundle in order to install plugins.
-If you want to know more aboyt NeoBundle check this :
+
+If you want to know more about NeoBundle check this :
+
 ```
 https://github.com/Shougo/neobundle.vim
 ```
