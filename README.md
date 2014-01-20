@@ -22,7 +22,7 @@ Setup
 You can install this via the command
 
 ```
-curl -L https://github.com/sohjiro/.vim/blob/master/run_config.sh | sh
+curl -L https://raw2.github.com/sohjiro/.vim/master/run_config.sh | sh
 ```
 
 FAQ
