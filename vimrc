@@ -16,6 +16,7 @@ NeoBundle 'Shougo/vimproc'
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-markdown'
 NeoBundle 'Lokaltog/vim-easymotion', '09c0cea8'   " This plugin is locked at revision 09c0cea8 
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
