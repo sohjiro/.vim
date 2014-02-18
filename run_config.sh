@@ -21,7 +21,7 @@ then
   rm -rf $DOT_VIM_FOLDER
 fi
 
-if [ -f "$DOT_VIMRC" ]
+if [ -h "$DOT_VIMRC" ]
 then
   echo "\033[0;31mMaking backup from your previous .vimrc file"
   cp -R $DOT_VIMRC ~/.vimrc_backup
