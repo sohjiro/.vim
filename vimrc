@@ -25,6 +25,7 @@ NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'rails.vim'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'terryma/vim-multiple-cursors'
 
 " Non github repos
 NeoBundle 'kien/ctrlp.vim.git'
@@ -40,7 +41,6 @@ NeoBundle 'bling/vim-bufferline'
 " NeoBundle 'git@github.com:Lokaltog/powerline.git'
 NeoBundle 'https://github.com/Lokaltog/powerline-fonts'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'git@github.com:terryma/vim-multiple-cursors.git'
 
 " if !exists('g:airline_symbols')
 "   let g:airline_symbols = {}
