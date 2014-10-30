@@ -1,9 +1,8 @@
 " Example Vim configuration.
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
-let mapleader=","
-
 set nocompatible                  " Must come first because it changes other options.
+let mapleader=","
 
 " silent! call pathogen#runtime_append_all_bundles()
 " execute pathogen#infect()
@@ -51,7 +50,8 @@ set expandtab                    " Use spaces instead of tabs
 set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-set wildignore+=target/*,tmp/*,*.swp,*.class
+set wildignore+=**/target/*,tmp/*,*.swp,*.class,**/build/**
+let NERDTreeIgnore=['build']
 
 " Or use vividchalk
 " colorscheme solarized

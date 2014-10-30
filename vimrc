@@ -19,6 +19,8 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'Lokaltog/vim-easymotion', '09c0cea8'   " This plugin is locked at revision 09c0cea8 
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+NeoBundle 'mattn/emmet-vim'
+
 
 " vim-scripts repos
 NeoBundle 'L9'
