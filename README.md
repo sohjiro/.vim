@@ -15,7 +15,6 @@ And if you want to install more plugins this is what you want
 http://www.vimpusher.com/plugins
 ```
 
-
 Setup
 ====
 
