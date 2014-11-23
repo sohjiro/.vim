@@ -90,9 +90,7 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 " option, but show any errors
 " au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
 " au BufWritePost *.coffee make! -b | cwindow | redraw!
-
-" Autocomplete for backbone syntax
-au FileType javascript set completefunc=backbone#compl
+au BufNewFile,BufRead *.gradle set filetype=groovy
 
 map <leader>c :CommandT<CR>
 map <leader>f :CommandTFlush<CR>
