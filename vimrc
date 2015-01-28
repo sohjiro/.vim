@@ -34,9 +34,11 @@ if neobundle#tap('vim-fugitive')
   call neobundle#untap()
 endif
 NeoBundle 'tpope/vim-markdown'
-NeoBundle 'Lokaltog/vim-easymotion', '09c0cea8'   " This plugin is locked at revision 09c0cea8 
+NeoBundle 'Lokaltog/vim-easymotion', '09c0cea8'   " This plugin is locked at revision 09c0cea8
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 NeoBundle 'mattn/emmet-vim'
+NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'rking/ag.vim'
 
 
 " vim-scripts repos
