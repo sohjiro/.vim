@@ -91,6 +91,8 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 " au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
 " au BufWritePost *.coffee make! -b | cwindow | redraw!
 au BufNewFile,BufRead *.gradle set filetype=groovy
+au BufNewFile,BufRead *.gsp set filetype=html
+au BufWritePre * :%s/\s\+$//e
 
 map <leader>c :CommandT<CR>
 map <leader>f :CommandTFlush<CR>
