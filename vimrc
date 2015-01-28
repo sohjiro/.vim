@@ -9,13 +9,30 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'tools\\update-dll-mingw',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'linux' : 'make',
+      \     'unix' : 'gmake',
+      \    },
+      \ }
 
 " My Bundles here:
 "
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
-NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-fugitive', {
+      \ 'autoload': {'functions': 'fugitive#statusline()'}
+      \ }
+if neobundle#tap('vim-fugitive')
+  " Some settings...
+  function! neobundle#hooks.on_source(bundle)
+    source ~/.vim/vim_config.vim
+  endfunction
+  call neobundle#untap()
+endif
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'Lokaltog/vim-easymotion', '09c0cea8'   " This plugin is locked at revision 09c0cea8 
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -72,8 +89,3 @@ call neobundle#end()
 
 " Installation check.
 NeoBundleCheck
-
-augroup config_files
-  source ~/.vim/vim_config.vim
-augroup END
-
