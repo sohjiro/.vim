@@ -1,6 +1,7 @@
 DOT_VIM_FOLDER=~/.vim
 GIT="hash git >/dev/null && /usr/bin/env git $1"
 
+cd $DOT_VIM_FOLDER
 echo "\033[0;32mGetting current branch...\033[0m"
 CURRENT_BRANCH=`eval $GIT "rev-parse --abbrev-ref HEAD"`
 echo "\033[0;32mCurrent branch is $CURRENT_BRANCH...\033[0m"
