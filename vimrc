@@ -47,6 +47,7 @@ NeoBundle 'FuzzyFinder'
 NeoBundle 'rails.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'jstrater/mpvim'
 
 " Non github repos
 NeoBundle 'kien/ctrlp.vim.git'
@@ -56,7 +57,6 @@ NeoBundle 'kien/ctrlp.vim.git'
 "       \ 'name': 'everything.vim',
 "       \ 'script_type': 'plugin'}
 " Non git repos
-NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 NeoBundle 'https://github.com/scrooloose/nerdtree.git'
 NeoBundle 'bling/vim-bufferline'
 " NeoBundle 'git@github.com:Lokaltog/powerline.git'
