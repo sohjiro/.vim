@@ -51,3 +51,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 echo "\033[0;34mCreating symbolic link for later updating...\033[0m"
 ln -s ~/.vim/update_config.sh /usr/local/bin/myvim_update
 chmod +x /usr/local/bin/myvim_update
+
+
+echo "\033[0;34mExecuting for 1st time vim...\033[0m"
+vim
