@@ -54,6 +54,4 @@ call neobundle#end()
 " Installation check.
 NeoBundleCheck
 
-if exists("*fugitive#statusline")
-  source ~/.vim/vim_config.vim
-endif
+source ~/.vim/vim_config.vim
