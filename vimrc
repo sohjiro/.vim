@@ -31,7 +31,6 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'rking/ag.vim'
 
-
 " vim-scripts repos
 NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
@@ -55,7 +54,6 @@ call neobundle#end()
 " Installation check.
 NeoBundleCheck
 
-source ~/.vim/vim_config.vim
 if exists("*fugitive#statusline")
-  set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+  source ~/.vim/vim_config.vim
 endif
