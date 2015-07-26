@@ -45,9 +45,9 @@ https://github.com/Lokaltog/powerline-fonts
 ```
 
 
-* **I have troubles with a mpvim file something
+* **I have troubles with a mpvim file something**
 
-If this error apperars to you everytime that you open vim and say something about a DLL try next.
+If this error apperars to you everytime that you open vim and say something about a .DLL/.so try next.
 
 ```
 cd ~/.vim/bundle/mpvim
