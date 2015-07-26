@@ -31,7 +31,7 @@ then
 fi
 
 echo "\033[0;34mCloning .vim from sohjiro repository...\033[0m"
-hash git >/dev/null && /usr/bin/env git clone https://github.com/sohjiro/.vim.git ~/.vim || {
+hash git >/dev/null && /usr/bin/env git clone git@github.com:sohjiro/.vim.git --branch feature/8 --single-branch ~/.vim || {
   echo "git not installed"
   exit
 }
