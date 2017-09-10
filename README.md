@@ -3,16 +3,16 @@
 
 This repo uses NeoBundle in order to install plugins.
 
-If you want to know more about NeoBundle check this :
+If you want to know more about vim-plug this :
 
 ```
-https://github.com/Shougo/neobundle.vim
+https://github.com/junegunn/vim-plug
 ```
 
 And if you want to install more plugins this is what you want
 
 ```
-http://www.vimpusher.com/plugins
+https://vimawesome.com
 ```
 
 Setup
@@ -42,14 +42,4 @@ Check this :
 
 ```
 https://github.com/Lokaltog/powerline-fonts
-```
-
-
-* **I have troubles with a mpvim file something**
-
-If this error apperars to you everytime that you open vim and say something about a .DLL/.so try next.
-
-```
-cd ~/.vim/bundle/mpvim
-make install
 ```
