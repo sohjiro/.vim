@@ -1,57 +1,62 @@
 if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
+call plug#begin('~/.vim/plugged')
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+" vimproc is a great asynchronous execution library for Vim
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
+" Git wrapper
+Plug 'tpope/vim-fugitive'
 
-" Recommended to install
-" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/vimproc', {
-      \ 'build' : {
-      \     'windows' : 'tools\\update-dll-mingw',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'linux' : 'make',
-      \     'unix' : 'gmake',
-      \    },
-      \ }
+" Syntax highlighting and filetype plugins for Markdown
+Plug 'tpope/vim-markdown'
 
-" My Bundles here:
-"
-" Note: You don't set neobundle setting in .gvimrc!
-" Original repos on github
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-markdown'
-NeoBundle 'Lokaltog/vim-easymotion', '09c0cea8'   " This plugin is locked at revision 09c0cea8
-NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'elixir-lang/vim-elixir'
-NeoBundle 'rking/ag.vim'
+" Vim plugin for editing Ruby on Rails applications
+Plug 'tpope/vim-rails'
 
-" vim-scripts repos
-NeoBundle 'L9'
-NeoBundle 'FuzzyFinder'
-NeoBundle 'rails.vim'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'jstrater/mpvim'
+" EasyMotion provides a much simpler way to use some motions in vim
+Plug 'easymotion/vim-easymotion'
 
-" Non github repos
-NeoBundle 'kien/ctrlp.vim.git'
+" Sparkup lets you write HTML code faster
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-" gist repos
-NeoBundle 'https://github.com/scrooloose/nerdtree.git'
-NeoBundle 'bling/vim-bufferline'
-NeoBundle 'https://github.com/Lokaltog/powerline-fonts'
-NeoBundle 'bling/vim-airline'
+" Provides support for expanding abbreviations
+Plug 'mattn/emmet-vim'
 
-let g:airline_powerline_fonts=1
-call neobundle#end()
+" Run your favorite search tool from Vim, with an enhanced results list.
+Plug 'mileszs/ack.vim'
 
-" Installation check.
-NeoBundleCheck
+" Utility functions and commands for programming in Vim
+Plug 'Daniel451/L9'
+
+" Adds CoffeeScript support to vim
+Plug 'kchmck/vim-coffee-script'
+
+" Another attempt to bring Sublime Text's awesome multiple selection.
+Plug 'terryma/vim-multiple-cursors'
+
+" Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+Plug 'ctrlpvim/ctrlp.vim'
+
+" The NERDTree is a file system explorer for the Vim editor
+Plug 'scrooloose/nerdtree'
+
+" Super simple vim plugin to show the list of buffers in the command bar.
+Plug 'bling/vim-bufferline'
+
+" Lean & mean status/tabline for vim that's light as air.
+Plug 'vim-airline/vim-airline'
+
+" This is the official theme repository for vim-airline
+Plug 'vim-airline/vim-airline-themes'
+
+" A simple, easy-to-use Vim alignment plugin.
+Plug 'junegunn/vim-easy-align'
+
+" One stop shop for vim colorschemes
+Plug 'flazz/vim-colorschemes'
+
+source ~/.vim/custom/plugged
+call plug#end()
 
 source ~/.vim/vim_config.vim
+source ~/.vim/custom/config
