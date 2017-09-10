@@ -1,4 +1,3 @@
-if has('vim_starting')
 call plug#begin('~/.vim/plugged')
 
 " vimproc is a great asynchronous execution library for Vim
