@@ -39,23 +39,35 @@ hash git >/dev/null && /usr/bin/env git clone https://github.com/sohjiro/.vim.gi
 echo "\033[0;34mCreating tmp directory for saving swp files...\033[0m"
 mkdir -p ~/.vim/tmp
 
-
 echo "\033[0;34mCreating autoload file...\033[0m"
 mkdir -p ~/.vim/autoload
 
 echo "\033[0;34mCloning vim-pluging to autoload...\033[0m"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-# /usr/bin/env git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
-# create dir custom
-# create file plugged inside custom
-# create file config inside custom
+echo "\033[0;34mCreating custom directory...\033[0m"
+mkdir -p ~/.vim/custom
 
-# echo "\033[0;34mCreating bundle directory...\033[0m"
-# mkdir -p ~/.vim/bundle
+echo "\033[0;34mCreating user plugged file example...\033[0m"
+cat > ~/.vim/custom/plugged <<- EOM
+"Elixir support for vim.
+Plug 'elixir-lang/vim-elixir'
 
-# echo "\033[0;34mCloning neobundle repository...\033[0m"
-# /usr/bin/env git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+"Give information about your elixir project in vim.
+Plug 'slashmili/alchemist.vim'
+EOM
+
+echo "\033[0;34mCreating user config file example...\033[0m"
+cat > ~/.vim/custom/config <<- EOM
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --smart-case'
+endif
+
+colorscheme 0x7A69_dark
+EOM
+
+echo "\033[0;34mCreating plugged directory...\033[0m"
+mkdir -p ~/.vim/plugged
 
 echo "\033[0;34mCreating symbolic link...\033[0m"
 ln -s ~/.vim/vimrc ~/.vimrc
