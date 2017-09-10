@@ -4,3 +4,6 @@ bundle/
 tmp/*.swp
 after/
 .netrwhist
+autoload/
+custom/
+plugged/
