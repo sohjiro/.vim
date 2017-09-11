@@ -24,6 +24,12 @@ You can install this via the command
 curl -L https://raw.githubusercontent.com/sohjiro/.vim/master/run_config.sh | sh
 ```
 
+One is finished open vim and run the following command
+
+```
+:PlugInstall
+```
+
 FAQ
 ====
 
