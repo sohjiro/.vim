@@ -50,15 +50,17 @@ mkdir -p ~/.vim/custom
 
 echo "\033[0;34mCreating user plugged file example...\033[0m"
 cat > ~/.vim/custom/plugged <<- EOM
-"Elixir support for vim.
+" In this file you can put your own plugins
+" Elixir support for vim.
 Plug 'elixir-lang/vim-elixir'
 
-"Give information about your elixir project in vim.
+" Give information about your elixir project in vim.
 Plug 'slashmili/alchemist.vim'
 EOM
 
 echo "\033[0;34mCreating user config file example...\033[0m"
 cat > ~/.vim/custom/config <<- EOM
+" In this file you can put your own configurations
 if executable('ag')
   let g:ackprg = 'ag --vimgrep --smart-case'
 endif
