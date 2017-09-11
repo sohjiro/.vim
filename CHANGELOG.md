@@ -15,3 +15,6 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Added a shell command for upgrade
 
+
+[v2.0.0]: https://github.com/sohjiro/.vim/compare/v1.0.0...HEAD
+[v1.0.0]: https://github.com/sohjiro/.vim/compare/b161cc984652916b93a04de0fabf93928fb1f285...v1.0.0
