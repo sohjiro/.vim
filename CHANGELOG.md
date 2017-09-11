@@ -8,6 +8,8 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Added changelog
 - Added upgraded instructions
+- Added file for user's plugin
+- Added file for user's configuration
 
 ## [v1.0.0] - 2015-07-27
 ### Added
